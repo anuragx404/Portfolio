@@ -174,14 +174,9 @@
         }
 
         .gradient-text {
-
             background: linear-gradient(to right, #a78bfa, #d8b4fe);
-
-
             -webkit-background-clip: text;
             background-clip: text;
-
-
             color: transparent;
         }
 
@@ -641,14 +636,35 @@
 
         <!-- Contact Section -->
         <section id="contact" class="py-12 scroll-mt-24 animate-on-scroll">
-            <div class="text-center bento-card max-w-3xl mx-auto p-10 rounded-2xl">
-                <h2 class="text-4xl font-bold text-white">Have a project in mind?</h2>
-                <p class="mt-4 text-lg text-gray-400 max-w-xl mx-auto">I'm always excited to hear about new ideas,
-                    whether it's a data challenge, a web application, or a video project. Let's see how we can work
-                    together.</p>
-                <a href="mailto:anuragnegi0001@gmail.com"
-                    class="mt-8 inline-block bg-violet-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-violet-700 transition-all duration-300 shadow-lg hover:shadow-violet-500/40 transform hover:-translate-y-1">Let's
-                    Create Something</a>
+            <div class="bento-card max-w-4xl mx-auto p-8 md:p-12 rounded-2xl">
+                <div class="text-center">
+                    <h2 class="text-4xl font-bold text-white">Have a project in mind?</h2>
+                    <p class="mt-4 text-lg text-gray-400 max-w-xl mx-auto">I'm always excited to hear about new ideas.
+                        Fill out the form below and let's see how we can work together.</p>
+                </div>
+                <form action="https://formspree.io/f/mldldqqa" method="POST" class="mt-10 max-w-2xl mx-auto">
+                    <div class="grid grid-cols-1 md:grid-cols-2 md:gap-6">
+                        <!-- Name Input -->
+                        <div class="mb-6">
+                            <label for="name" class="block mb-2 text-sm font-medium text-gray-400">Full Name</label>
+                            <input type="text" id="name" name="name" class="w-full p-3 bg-zinc-800/50 border border-zinc-700 rounded-lg text-gray-200 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-all" placeholder="Your Name" required>
+                        </div>
+                        <!-- Email Input -->
+                        <div class="mb-6">
+                            <label for="email" class="block mb-2 text-sm font-medium text-gray-400">Email Address</label>
+                            <input type="email" id="email" name="_replyto" class="w-full p-3 bg-zinc-800/50 border border-zinc-700 rounded-lg text-gray-200 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-all" placeholder="your.email@example.com" required>
+                        </div>
+                    </div>
+                    <!-- Message Textarea -->
+                    <div class="mb-6">
+                        <label for="message" class="block mb-2 text-sm font-medium text-gray-400">Your Message</label>
+                        <textarea id="message" name="message" rows="5" class="w-full p-3 bg-zinc-800/50 border border-zinc-700 rounded-lg text-gray-200 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-all" placeholder="Tell me about your project or idea..." required></textarea>
+                    </div>
+                    <!-- Submit Button -->
+                    <div class="text-center">
+                        <button type="submit" class="bg-violet-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-violet-700 transition-all duration-300 shadow-lg hover:shadow-violet-500/40 transform hover:-translate-y-1 w-full md:w-auto">Send Message</button>
+                    </div>
+                </form>
             </div>
         </section>
 
